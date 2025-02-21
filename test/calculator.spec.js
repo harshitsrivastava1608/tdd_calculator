@@ -18,5 +18,4 @@ describe('calculator',()=>{
         const result = calculator(1,2,3,4,5,5)
         assert.equal(result,20)
     })    
-
 })
