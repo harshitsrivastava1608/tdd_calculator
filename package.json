@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "start": "node input.js"
+    "start": "node Calculate.js"
   },
   "keywords": [],
   "author": "",
