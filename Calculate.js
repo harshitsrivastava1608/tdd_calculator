@@ -15,6 +15,7 @@ class Calculate {
     try {
         // checking the negative numbers
       const arr = getNegatives(nums);
+      
       if (arr.length > 0) {
         throw new Error(`Negatives not allowed ${arr}`);
       }
@@ -38,14 +39,12 @@ class Calculate {
   // fixing of input arguments
   startCal=(str="")=>{
       const arrayOfInput=str.split(/[\n,]/).filter(x => x.trim() !== "").map(Number)
-      console.log('aoi',arrayOfInput)
       this.calculator(...arrayOfInput)
   }
 }
 (function () {
   try {
     const calculate = new Calculate();
-    console.log(process.argv)
     calculate.startCal(process.argv[2]);
     console.log("add called for ", calculate.getCalledCount(), " times");
   } catch (err) {
